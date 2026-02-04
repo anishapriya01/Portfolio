@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Portfolio</title>
+  <title>Portfolio - Portfolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="starter-page-page">
+<body class="portfolio-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -52,7 +52,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -71,28 +71,116 @@
 
   <main class="main">
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Portfolio</h2>
+      <p>Here are some of the projects I have worked on, showcasing my skills in frontend development, web development, and responsive design.</p>
+    </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-portfolio">Web Development</li>
+          <li data-filter=".filter-projects">Projects</li>
+          <li data-filter=".filter-certifications">Certifications</li>
+        </ul><!-- End Portfolio Filters -->
+
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+          <!-- Personal Portfolio Website -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-portfolio">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/portfolio-portfolio.webp" alt="Personal Portfolio" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="assets/img/portfolio/portfolio-portfolio.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio.html" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Personal Portfolio Website</h4>
+                <p>Responsive Web Design</p>
+                <div class="portfolio-tags">
+                  <span>HTML</span>
+                  <span>JavaScript</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menstrual Health & Awareness Website -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/period.png" alt="Menstrual Health Website" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="assets/img/portfolio/period.png" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                  <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Menstrual Health & Awareness Website</h4>
+                <p>Web App with Period Tracker & FAQs</p>
+                <div class="portfolio-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Web Development Certification Example -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/Adeverk internship certificate_page-0001.jpg" alt="Web Development Certification" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <a href="assets/img/portfolio/Adeverk internship certificate_page-0001.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                  <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web Development Certification</h4>
+                <p>ADVERK Web Basics</p>
+                <div class="portfolio-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>BootStrap Grid</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- End Portfolio Items Container -->
+
       </div>
 
-    </section><!-- /Starter Section Section -->
+      <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+        <a href="portfolio-details.html" class="btn btn-primary">View All Projects</a>
+      </div>
 
-  </main>
+    </div>
+
+  </section><!-- /Portfolio Section -->
+
+</main>
+
 
   <footer id="footer" class="footer">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Anisha Priyagit </strong> <span>All Rights Reserved<br></span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Anisha Priya</strong> <span>All Rights Reserved<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href="https://github.com/anishapriya01" class="github"><i class="bi bi-github"></i></a>
